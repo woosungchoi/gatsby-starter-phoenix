@@ -25,19 +25,9 @@ module.exports = {
     ],
     socialLinks: [
       {
-        name: `Twitter`,
-        url: `https://twitter.com`,
-        icon: `twitter`,
-      },
-      {
         name: `Github`,
         url: `https://github.com/woosungchoi`,
         icon: `github`,
-      },
-      {
-        name: `Youtube`,
-        url: `https://youtube.com`,
-        icon: `youtube`,
       },
     ],
   },
