@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Woosung blog.`,
     description: `Gatsby phoenix ??? ?? ??????. ?????, ??? ?? ?????.`,
-    siteUrl: process.env.SITE_URL || `http://localhost`,
+    siteUrl: process.env.SITE_URL || `https://gatsby-starter-phoenix.vercel.app/`,
     startUrl: `/`,
     copyright: `© YYYY Woosung blog. All rights reserved.`,
     icon: `src/images/icon.png`,
