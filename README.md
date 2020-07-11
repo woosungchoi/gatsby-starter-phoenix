@@ -29,9 +29,7 @@ gatsby new my-site arshad/gatsby-starter-phoenix
 
 Copy `.env.example` to `.env` and update `SITE_URL`.
 
-Vercel에 업로드하면 .env 파일이 업로드 안되는 것 같습니다.
-
-Vercel Settings에 들어가서 `Environment Variables`에 직접 `GATSBY_DISQUS_NAME`와 `SITE_URL`의 Production과 Preview에 넣어주면 Disqus도 잘 됩니다.
+.env 파일이 .gitignore 파일에 의해 업로드가 되지 않습니다. 따라서 .gitignore 파일을 수정하여 업로드 될 수 있게 수정해야 합니다.
 
 ### Step 3: Start developing
 
