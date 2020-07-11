@@ -2,11 +2,11 @@ require(`dotenv`).config()
 
 module.exports = {
   siteMetadata: {
-    title: `Phoenix.`,
-    description: `A personal blogging theme for Gatsby with great typography and dark mode.`,
+    title: `Woosung blog.`,
+    description: `Gatsby phoenix ??? ?? ??????. ?????, ??? ?? ?????.`,
     siteUrl: process.env.SITE_URL || `http://localhost`,
     startUrl: `/`,
-    copyright: `© YYYY Phoenix. All rights reserved.`,
+    copyright: `© YYYY Woosung blog. All rights reserved.`,
     icon: `src/images/icon.png`,
     color: `#3C64F1`,
     menuLinks: [
@@ -18,18 +18,6 @@ module.exports = {
         name: `Blog`,
         link: `/blog`,
       },
-      {
-        name: `Podcast`,
-        link: `/podcast`,
-      },
-      {
-        name: `Portfolio`,
-        link: `/portfolio`,
-      },
-      {
-        name: `Photography`,
-        link: `/photography`,
-      },
     ],
     socialLinks: [
       {
@@ -39,7 +27,7 @@ module.exports = {
       },
       {
         name: `Github`,
-        url: `https://github.com`,
+        url: `https://github.com/woosungchoi`,
         icon: `github`,
       },
       {
@@ -54,29 +42,6 @@ module.exports = {
     // To disable a theme, remove it here and run `yarn remove @arshad/gatsby-theme-NAME`.
     `@arshad/gatsby-theme-blog-core`,
     `@arshad/gatsby-theme-page-core`,
-    `@arshad/gatsby-theme-portfolio-core`,
-    `@arshad/gatsby-theme-photo-core`,
-    {
-      resolve: `@arshad/gatsby-theme-podcast-core`,
-      options: {
-        feedUrl: `https://feeds.megaphone.fm/travelgenius`,
-        podcast: {
-          name: `Travel Genuis`,
-          description: `Eligendi nisi nobis nisi voluptate. Corporis deserunt provident hic numquam. Veritatis vero necessitatibus adipisci cumque voluptate rerum at.`,
-          image: `assets/images/podcast.jpg`,
-          social: [
-            {
-              name: `Apple Podcast`,
-              url: `https://itunes.apple.com`,
-            },
-            {
-              name: `Google Podcast`,
-              url: `https://podcasts.google.com`,
-            },
-          ],
-        },
-      },
-    },
     `@arshad/gatsby-theme-phoenix`,
   ],
 }
