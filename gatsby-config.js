@@ -3,10 +3,10 @@ require(`dotenv`).config()
 module.exports = {
   siteMetadata: {
     title: `Woosung blog.`,
-    description: `Gatsby phoenix ??? ?? ??????. ?????, ??? ?? ?????.`,
+    description: `Gatsby phoenix 테마로 만든 블로그입니다. 정적사이트, 사진에 대한 내용입니다.`,
     siteUrl: process.env.SITE_URL || `https://gatsby-starter-phoenix.vercel.app/`,
     startUrl: `/`,
-    copyright: `© YYYY Woosung blog. All rights reserved.`,
+    copyright: `Â© YYYY Woosung blog. All rights reserved.`,
     icon: `src/images/icon.png`,
     color: `#3C64F1`,
     menuLinks: [
