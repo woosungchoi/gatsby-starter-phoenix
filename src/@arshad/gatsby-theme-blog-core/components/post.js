@@ -68,7 +68,7 @@ export default ({ title, excerpt, image, tags, caption, date, body, slug }) => {
 
         <div className="lg:w-4/5 mx-auto">
           <div className="text-sm mt-8 pt-8 md:mt-16 md:pt-16 border-t border-offwhite dark:border-text text-text dark:text-white">
-            <DiscussionEmbed {...disqusConfig} />
+          <DiscussionEmbed {...disqusConfig} />
           </div>
         </div>
       </article>
