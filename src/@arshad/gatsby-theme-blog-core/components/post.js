@@ -7,8 +7,8 @@ import Layout from "@arshad/gatsby-theme-phoenix/src/components/layout";
 import { DiscussionEmbed } from "disqus-react";
 
 export default ({ title, excerpt, image, tags, caption, date, body, slug }) => {
+  const disqusShortname = process.env.GATSBY_DISQUS_NAME;
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: slug, title, url: slug },
   };
 
@@ -68,7 +68,7 @@ export default ({ title, excerpt, image, tags, caption, date, body, slug }) => {
 
         <div className="lg:w-4/5 mx-auto">
           <div className="text-sm mt-8 pt-8 md:mt-16 md:pt-16 border-t border-offwhite dark:border-text text-text dark:text-white">
-            <DiscussionEmbed {...disqusConfig} />
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
         </div>
       </article>
