@@ -9,7 +9,7 @@ import { DiscussionEmbed } from "disqus-react";
 export default ({ title, excerpt, image, tags, caption, date, body, slug }) => {
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: slug, title },
+    config: { identifier: title, url: slug, title: title },
   };
 
   const tagLinks = tags
